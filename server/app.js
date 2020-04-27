@@ -6,10 +6,6 @@ const axios = require("axios");
 app.use(express.static(path.join(__dirname, "../build")));
 app.use(express.static(path.join(__dirname, "../public")));
 
-app.get("*", (req, res, next) => {
-  res.sendFile(path.join(__dirname, "..public/index.html"));
-});
-
 app.get("/api/tweets/:ticker", (req, res, next) => {
   const ticker = req.params.ticker;
   axios
@@ -21,8 +17,13 @@ app.get("/api/tweets/:ticker", (req, res, next) => {
     .catch(next);
 });
 
+app.get("*", (req, res, next) => {
+  res.sendFile(path.join(__dirname, "..public/index.html"));
+});
+
 app.use((err, req, res, next) => {
   res.status = res.status || 500;
+  console.log("server error");
   console.log(err.stack);
   next(err);
 });

@@ -14,21 +14,8 @@ function ContextProvider(props) {
   };
 
   const getTwits = () => {
-    // axios
-    //   .get(
-    //     `https://api.stocktwits.com/api/2/streams/symbol/${searchValue}.json `
-    //   )
-    //   .then((res) => {
-    //     setAnError("");
-    //     setTwits(res.data.messages);
-    //   })
-    //   .catch((err) => {
-    //     setTwits([]);
-    //     setAnError("No twits matching the Stock symbol were found!");
-    //   });
-
     axios
-      .get(`api/tweets/${searchValue} `)
+      .get(`api/tweets/${searchValue}`)
       .then((res) => {
         setAnError("");
         setTwits(res.data.messages);
