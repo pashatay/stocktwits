@@ -68,6 +68,7 @@ input {
   input {
     margin-top: 15%;
     font-size: 3rem;
+    height: 8vh;
   }
   .number-of-twits {
     font-size: 2rem;
@@ -83,7 +84,7 @@ input {
 /* large desktops and up ----------- */
 @media screen and (min-width: 1200px) {
   .div-intro-text {
-    height: 0vh;
+    height: 9vh;
   }
   .intro-text {
     margin-top: 5%;
@@ -93,6 +94,7 @@ input {
   input {
     margin-top: 15%;
     font-size: 3rem;
+    height: 9vh;
   }
   .number-of-twits {
     font-size: 1.5rem;
