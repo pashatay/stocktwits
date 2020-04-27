@@ -1,0 +1,8 @@
+.blue {
+  background-color: #8fc0a9 !important;
+}
+
+h4 {
+  text-shadow: 1px 1px 10px rgb(248, 242, 242), 0 0 5px rgb(237, 237, 241),
+    0 0 1px rgb(245, 245, 248);
+}
