@@ -10,4 +10,4 @@ I used [StockTwits API](https://api.stocktwits.com/developers/docs) to build thi
 - Node/Express,
 - CSS, Bootstrap, HTML.
 
-Check out the [live page](stock-twits.now.sh).
+Check out the [live page](https://stock-twits.herokuapp.com).
